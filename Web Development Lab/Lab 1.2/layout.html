@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design Lab2</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: auto;
+            width: 70vw;
+            height: 100vh;
+            box-sizing: border-box;
+            align-items: center;
+        }
+
+        .top{
+            width: 100%;
+            background-color: rgb(255, 153, 0);
+            border: 2px solid red;
+            padding: 5px;
+            height: 60px;
+            box-sizing: border-box;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 15px 10px;
+        }
+
+        .navbar li a{
+            margin-bottom: 10px;
+            color: white;
+            padding: 3px;
+            align-self: center;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover{
+            color: black;
+        }
+        .search{
+            float: right;
+            margin: 15px 20px 2px 10px;
+        }
+
+        .navbar input{
+            border: 2px solid rgb(221, 97, 15);
+            border-radius: 4px;
+        }
+
+
+        .upper{
+            width: 70%;
+            height: 270px;
+            margin: 13px 10px;
+            border: 2px solid red;
+            box-sizing: border-box;
+        
+        }
+
+        .upper img{
+            width: 100%;
+            height: 270px;
+            
+        }
+
+
+        .lower{
+            width: 100%;
+            height: 240px;
+            margin: 10px;
+            background-color: rgb(197, 216, 215);
+            border: 2px solid red;
+            display: flex;
+            flex-direction: row;
+            /* box-sizing: border-box; */
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 5px;
+            
+        }
+        
+        .lower img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .lower h2{
+            color: rgb(47, 154, 196);
+            height: 5px;
+            padding-bottom: 10px;
+            padding-top: 0px;
+        }
+
+        .lower p{
+            font-size: 13px;
+            color: rgb(66, 88, 87);
+        }
+
+        .but{
+            background-color: rgb(14, 88, 117);
+            color: rgb(248, 125, 43);
+            padding: 4px;
+        }
+
+        .item{
+            border: 2px solid red;
+            width: 165px;
+            height: 200px;
+            margin: 15px;
+            padding: 5px;
+            align-self: center;
+            display: inline-block;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        #item-1{
+            text-align: center;
+        }
+        #item-2{
+            text-align: center;
+        }
+        #item-3{
+            text-align: center;
+        }
+        #item-4{
+            text-align: center;
+        }
+
+        .buttom{
+            margin-top: auto;
+            height: 70px;
+            width: 100%;
+            background-color: rgb(255, 153, 0);
+            border: 2px solid red;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+
+
+        .navbar2 li{
+            float: left;
+            list-style: none;
+            margin: 15px 10px;
+        }
+
+        .navbar2 li a{
+            align-self: center;
+            color: white;
+            padding: 3px;
+            text-decoration: none;
+        }
+
+        .navbar2 li a:hover{
+            color: black;
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="container">
+
+
+        <div class="top" id="topsolve">
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Service</a> </li>
+                    <li><a href="#">Contract me</a> </li>
+                    <!-- <div class="search">
+                        <input type=" text" name="search" id="search" placeholder="Search Webside">
+                    </div> -->
+                </ul>
+            </nav>
+            
+        </div>
+
+
+        <div class="upper" id="uppersolve">
+            <img src="img/03.jpg">
+
+        </div>
+
+
+        <div class="lower" id="lowersolve">
+            <div class="item" id="item-1">
+
+                <div class="img">
+                    <img src="img/photo.png" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Title 1</h2>
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident ullam cum earum enim sapiente.</p>
+                </div>
+                <button class="but">
+                    Read More
+                </button>
+                
+                
+            </div>
+
+            <div class="item" id="item-2">
+
+                <div class="img">
+                    <img src="img/location.png" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Title 1</h2>
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident ullam cum earum enim sapiente.</p>
+                    
+                </div>
+                <button class="but">
+                    Read More
+                </button>
+                
+            </div>
+
+            <div class="item" id="item-3">
+                
+                <div class="img">
+                    <img src="img/cloud.png" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Title 1</h2>
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident ullam cum earum enim sapiente.</p>
+                   
+                </div>
+                <button class="but">
+                    Read More
+                </button>
+
+            </div>
+
+            <div class="item" id="item-4">
+                <div class="img">
+                    <img src="img/building.png" alt="">
+                </div>
+                <div class="headline">
+                    <h2>Title 1</h2>
+                </div>
+                <div class="details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident ullam cum earum enim sapiente.</p>
+                </div>
+                <button class="but">
+                    Read More
+                </button>
+               
+
+            </div> 
+            
+
+        </div>
+
+
+        <div class="buttom" id="buttomsolve">
+
+            <nav class="navbar2">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Service</a> </li>
+                    <li><a href="#">Contract me</a> </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
